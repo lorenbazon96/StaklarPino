@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <title>Staklar Vetraio Pino - Kontakt</title>
+
+    <meta property="og:title" content="Staklar Vetraio Pino - Kontakt">
+    <meta property="og:description" content="Dobrodošli u  S.T.O. Staklar Pino - Kontaktirajte nas.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/lorenbazon96/StaklarPino/main/slike/2.png">
+    <meta property="og:url" content="URL_tvoje_stranice">
+    <meta property="og:type" content="website">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/lorenbazon96/StaklarPino/main/slike/icon.png">
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding-top: 90vh;
+            padding-bottom: 10vh;
+          }
+          .contact-info {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            color: white;
+          }
+          
+          .image-column {
+            width: 50%;
+            padding: 0px;
+          }
+          
+          .image-column img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0px;
+          }
+
+          
+          .form-column {
+            width: 50%;
+            padding: 50px;
+          }
+          
+          .form-input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            background-color: transparent;
+            font-size: 16px;
+            margin-bottom: 20px;
+          }
+          
+          .form-input:focus {
+            border-bottom: 1px solid #333;
+            box-shadow: none;
+          }
+          
+          .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          
+          .btn:hover {
+            background-color: #444;
+          }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+          }
+          
+          .icon-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px;
+          }
+          
+          .icon-wrapper i {
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+          
+          .borde {
+            border-left: white;
+            border-right: white;
+            border-style: solid;
+            border-width: 1px;
+            border-top: none;
+            border-bottom: none;
+            padding-left: 20px;
+            padding-top: 35px;
+            padding-right: 20px;
+          }
+        .kontejnersivi {
+            background-color: #a5a9aa;
+        }
+        .container1 {
+            position: relative;
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+          .hero-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            filter: contrast(0.3);
+          }
+        
+        .image-right {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            max-width: 100%;
+            height: auto;
+        }
+        .btn-custom {
+            border-radius: 25px;
+            border-style: solid;
+            border-color: #a5a9aa;
+            border-width: 2px;
+            color: #a5a9aa;
+            font-weight: 500;
+            background-color: white;
+            width: 200px;
+            margin-top: 50px;
+        }
+        .btn-custom:hover {
+            border-color: #00d5ff;
+            color: #ffffff;
+        }
+        .image-container {
+            position: relative;
+          }
+          
+          .image-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(76, 76, 76, 0.837);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            transition: opacity 0.5s;
+            display: grid;
+            place-items: center;
+            font-size: 22px;
+
+          }
+          
+          .paragraf3 {
+            max-width: 450px;
+          }
+          .sivitekst {
+            color: #7a7a7a;
+          }
+          .kontenjerlast {
+            position: relative;
+            top: 0vh;
+            margin-top: 0;
+          }
+          .footer {
+            position:relative;
+            height: 40vh;
+            top: 0vh;
+            margin-top: 0;
+            text-align: center;
+            padding-top: 35px;
+        }
+        .malitekst {
+            font-size: 8px;;
+        }
+        .tekstmali {
+            font-size: 14px;
+        }
+        .fotekst {
+            margin-bottom: 35px;
+            font-size: 18px;
+        }
+        .social {
+            margin-left: 55px;
+        }
+        .link {
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .bijeli:hover {
+            text-decoration: none;
+            transform: scale(1.1);
+          }
+
+        /* Stilovi za mobilne uređaje */
+        @media (max-width: 768px) {
+            .naslov1 {
+                left: 50% !important;
+                font-size: 27px !important;
+                top: 30vh !important;
+            }
+
+            .naslov2 {
+                margin-top: 0px;
+                padding-bottom: 20px;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .manji {
+                font-size: 12px;
+            }
+            .footer {
+                position:relative;
+                height: 120vh !important;
+                margin-top: 0;
+                text-align: center;
+            }
+            .contact-info {
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: none;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+              .icon-wrapper {
+                margin-bottom: 20px;
+              }
+              .image-column, .form-column {
+                flex-basis: 100%;
+              }
+              .borde {
+                border:none;
+              }
+              .kontenjerlast iframe {
+                width: 100%;
+                height: 300px;
+                border: 0;
+              }
+              #svp {
+                position: relative;
+
+              }
+              #vasnovi {
+                position: relative;
+
+              }
+              #otkrijte {
+                position: relative;
+                top: -220px;
+                left: 7vw;
+              }
+              #kontakt {
+                position: relative;
+                top: 210px;
+                left: 31vw;
+              }
+              #adresa {
+                position: relative;
+                top: 200px;
+                left:20vw;
+              }
+              #onamaitd {
+                position: relative;
+                top:-200px;
+                left: 28vw;
+              }
+              #galerijaitd {
+                position: relative;
+                top:-350px;
+                left: 30vw;
+              }
+              #zapratite {
+                position: relative;
+                top:-250px;
+                right:1vw;
+              }
+              #ikone {
+                position: relative;
+                top: -280px;
+                left:17vw;
+              }
+              #allrights {
+                position: relative;
+                top: 430px;
+                left: 23vw;
+              }
+              #cookies {
+                position: relative;
+                top: 90px;
+                left: 23vw;
+              }
+              #personal {
+                position: relative;
+                top:5px;
+                left: 23vw;
+              }
+              
+        }
+        /* Stilovi za tablet uređaje */
+        @media (min-width: 768px) and (max-width: 992px) {
+            .naslov1 {
+                left: 50% !important;
+                font-size: 28px;
+                top: 40vh !important;
+
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .manji {
+                font-size: 12px;
+            }
+              .kontenjerlast {
+                position: relative;
+                top: 0vh !important;
+              }
+              .footer {
+                position:relative;
+                height: 50vh !important;
+                margin-top: 0;
+                text-align: center;
+            }
+            .kontenjerlast iframe {
+              width: 100%;
+              height: 300px; 
+              border: 0;
+            }
+    }
+    </style>
+</head>
+  <body>
+    
+      <header class="container-fluid py-3" style="background-color:rgba(0, 0, 0, 0.565);">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://raw.githubusercontent.com/lorenbazon96/StaklarPino/main/slike/1.png" alt="Logo" style="width:200px; height:45px; margin-top:22px"  >
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-white bijeli" style="font-size: 18px; margin-right: 30px;" aria-current="page" href="onama.html">O NAMA</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white bijeli" style="font-size: 18px; margin-right: 30px;" href="proizvodiiusluge.html">PROIZVODI I USLUGE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white bijeli" style="font-size: 18px; margin-right: 30px;" href="kontakt.html">KONTAKT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white bijeli" style="font-size: 18px;" href="projekti.html">PROJEKTI</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <img src="https://raw.githubusercontent.com/lorenbazon96/StaklarPino/main/slike/4.png" alt="Hero Image" class="hero-image">
+      </header>
+      <section class="hero">
+        <h1 class="text-white naslov1 naslov1-wrapper" style="font-size: 36px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index:1;">KONTAKTIRAJTE NAS</h1>
+        <div class="contact-info" style="position: absolute; top: 65%; left: 50%; transform: translate(-50%, -50%); z-index:1;color:white">
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-location-dot" style="font-size: 29px;"></i>
+              <span>Matije Vlašića 26/4, <br> HR-52440, Poreč</span>
+            </div>
+            <div class="icon-wrapper borde">
+              <i class="fa-regular fa-envelope" style="font-size: 29px;"></i>
+              <span>staklar.pino@gmail.com</span>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fa-solid fa-mobile-screen-button" style="font-size: 29px;"></i>
+              <span>+385 52 4517067</span>
+            </div>
+          </div>
+    </section>
+
+      
+      
+
+    <div class="container2">
+        <div class="image-column col-md-6 col-sm-12">
+          <img src="https://raw.githubusercontent.com/lorenbazon96/StaklarPino/main/slike/13.png" alt="Image" class="w-100">
+        </div>
+        <div class="form-column col-md-6 col-sm-12">
+          <h2 class="sivitekst" style="margin-bottom: 45px;font-size:25px">POŠALJITE NAM PORUKU</h2>
+          <form id="contact-form">
+            <input type="text" id="ime" name="ime" placeholder="Ime" class="form-input" required>
+            <input type="text" id="prezime" name="prezime" placeholder="Prezime" class="form-input" required>
+            <input type="email" id="email" name="email" placeholder="E-mail*" class="form-input" required>
+            <textarea name="poruka" id="poruka" placeholder="Poruka" class="form-input" required></textarea>
+            <button type="submit" class="btn btn-custom">Kontaktirajte nas</button>
+          </form>
+        </div>
+      </div>
+
+
+
+      <section class="kontenjerlast container-fluid w-100">
+          <div class="col-sm-12 col-md-12">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2809.888096252657!2d13.607713089139914!3d45.229831296480164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477c97903730eb61%3A0xca8eb6e1c9b764c8!2zVWwuIE1hdGUgVmxhxaFpxIdhIDI2LTQsIDUyNDQwLCBQb3JlxI0!5e0!3m2!1sen!2shr!4v1721234593624!5m2!1sen!2shr" width="1800" height="560" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+      </section>
+
+      <footer class="container-fluid text-white footer" style="background-color: #838788;">
+        <div class="container foter">
+          <div class="row">
+            <div class="col-md-2 col-sm-12">
+                <h5 class="fotekst" id="svp" style="text-align: left;">SVP</h5>
+              <p class="mt-3" id="vasnovi" style="text-align: left;">Vaš novi svijet stakla.</p>
+              <br>
+              <br>
+              <br>
+              <p class="mt-3 malitekst" id="allrights" style="text-align: left;">© 2023 | SVP , All Rights Reserved</p>
+            </div>
+            <div class="col-md-2 col-sm-12">
+              <h5 class="fotekst" id="kontakt" style="text-align: left;">KONTAKT</h5>
+              <ul class="list-unstyled tekstmali" id="adresa" style="text-align: left;">
+                <li>stakler.pino@gmail.com</li>
+                <li>00385-52-451-706</li>
+                <li>Matije Vlašića 26/4,HR - 52440</li>
+              </ul>
+            </div>
+            <div class="col-md-2 col-sm-12" style="height: 100px;">
+              <h5 class="fotekst" id="otkrijte" style="margin-left: -95px;">OTKRIJTE</h5>
+              <ul class="list-unstyled" id="onamaitd" style="text-align: left; margin-left:10px;">
+                <li><a href="onama.html" class="text-white link" >O NAMA</a></li>
+                <li><a href="proizvodiiusluge.html" class="text-white link" >PROIZVODI I USLUGE</a></li>
+              </ul>
+              <br>
+              <br>
+              <br>
+              <p id="cookies" class="malitekst" style="text-align: left;">Cookies policy</p>
+            </div>
+            <div class="col-md-2 col-sm-12" style="height: 100px;">
+              <h5 class="fotekst"><br></h5>
+              <ul class="list-unstyled" id="galerijaitd" style="text-align: left;">
+                <li><a href="projekti.html" class="text-white link" >GALERIJA</a></li>
+                <li><a href="kontakt.html" class="text-white link" >KONTAKT</a></li>
+              </ul>
+              <br>
+              <br>
+              <br>
+              <p class="malitekst" id="personal" style="text-align: left;">Personal Data Protection</p>
+            </div>
+            <div class="col-md-2 col-sm-12" >
+                <h5 class="fotekst" id="zapratite">ZAPRATITE</h5>
+              <ul id="ikone" class="list-unstyled d-flex social">
+                <li><a href="https://web.facebook.com/staklarpino/photos/?_rdc=1&_rdr" target="_blank" class="text-white" style="display: inline-block; font-size: 27px;margin: 0 10px;"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/staklar.pino/" target="_blank" class="text-white mx-2" style="display: inline-block; font-size: 27px;"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+     
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script type="text/javascript">
+          (function() {
+              emailjs.init("fSU1a1Dw_8JYXoQxv");
+          })();
+  
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              emailjs.sendForm('service_ckzh6xa', 'template_wmapono', this)
+                  .then(function() {
+                      alert('Poruka je uspješno poslana!');
+                  }, function(error) {
+                      alert('Došlo je do pogreške pri slanju poruke.');
+                  });
+          });
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
